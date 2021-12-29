@@ -1,0 +1,34 @@
+<div class="pokemon-body">
+  <div class="pokemon-name">
+    <h4 class="pokeName">POKEMON NAME COMES HERE</h4>
+    <p class="pokeModel">POKEMON MODEL COMES HERE</p>
+  </div>
+  <div class="pokemon-stats">
+    <div class="pokemon-informations">
+      <p class="pokeId"><span>ID</span>#6</p>
+      <p class="pokeHeight"><span>Height</span>1.7m (5'7)</p>
+      <p class="pokeWeight"><span>Weight</span>110.5kg (243.7lbs.)</p>
+      <p class="pokeAbility"><span>Abilities</span>TOUGH-CLAWS</p>
+      <p class="pokeType"><span>Type</span> FIRE - DRAGON</p>
+      <p class="pokeForm"><span>Forms</span> CHARIZARD</p>
+    </div>
+    <div class="pokemon-image">
+      <img src="./assets/example-asset.png" alt="" />
+    </div>
+    <div class="pokemon-values">
+      <p><span>HP</span>#6</p>
+      <p><span>Attack</span>#6</p>
+      <p><span>Defense</span>#6</p>
+      <p><span>Sp. Attack</span>#6</p>
+      <p><span>Sp.Defence</span>#6</p>
+      <p><span>Speed</span>#6</p>
+      <p><span>Total</span>640</p>
+    </div>
+  </div>
+</div>
+
+.pokemon-name { text-align: center; margin-top: 2rem; } .pokemon-stats {
+display: flex; justify-content: center; align-items: center; margin-top: 5rem; }
+.pokemon-image img { width: 500px; height: 500px; } .pokemon-informations span,
+.pokemon-values span { color: red; } .pokemon-informations p { color: #000;
+padding-top: 2rem; } .pokemon-values p { color: #000; padding-top: 2rem; }

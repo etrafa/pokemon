@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+nav {
+  display: flex;
+  background-color: #1a1516;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 70%;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5rem;
+}
+
+#poke-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 200px;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0 80px;
+}
+
+.pokeCard {
+  border: 1px solid black;
+}
+
+.pokeCard h4 {
+  color: red;
+}
+.pokeCard p {
+  color: blue;
+}
+
+.pokeCard img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pokeType p {
+  display: inline;
+  padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  #poke-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #poke-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #poke-container {
+    grid-template-columns: 1fr;
+  }
+}

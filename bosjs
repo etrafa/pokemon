@@ -1,0 +1,20 @@
+const randomPokemon = (pokeId) => {
+  const pokeContainer = document.getElementById("poke-container");
+  const pokeDiv = document.createElement("div");
+  const pokeName = document.createElement("h4");
+  const pokeType = document.createElement("ul");
+  const pokeImage = document.createElement("img");
+  pokeDiv.append(pokeName, pokeType, pokeImage);
+  pokeImage.className = "pokeDiv img";
+  pokeDiv.className = "pokeDiv";
+  pokeContainer.append(pokeDiv);
+
+  fetch(`https://pokeapi.co/api/v2/pokemon/${pokeId}`)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      pokeName.textContent = data.name;
+      pokeType.textContent = data.id;
+      pokeImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${pokeId}.png`;
+    });
+};
